@@ -107,21 +107,22 @@ body
 }
 
 #slideshow #navigation li {
-	width: 50%;
-	height: 100%;
+	width: 45px;
+	height: 75px;
 	float: left;
 	position: relative;
 	z-index: 100;
+	margin-top: 170px;
 }
 #slideshow #navigation li#next {
 	text-align: right;
+	float: right;
 }
 
 #slideshow #navigation li a {
 	
-	display: block;
+	display: inline-block;
 	opacity: 0.8;
-	margin-top: 170px;
 }
 
 
