@@ -55,7 +55,7 @@ body
 #menu > ul > li{
 	float: left;
 	margin: 0 1px;
-	width: 90px;
+	width-min: 90px;
 }
 
 #menu > ul > li a{
@@ -83,7 +83,7 @@ body
 	width: 500px;
 	height: 300px;
 	background-color: rgba(0, 0, 0, 0.6);
-	margin: -175px 0 0 50px;
+	margin: -175px 50px 0 50px;
 	position: relative;
 	padding: 5px;
 }
@@ -118,14 +118,10 @@ body
 }
 
 #slideshow #navigation li a {
-	display: inline-block;
-	background: rgba(0,0,0,0.5);
-	color: #ffffff;
-	text-decoration: none;
-	font-size: 21px;
-	padding: 20px;
-	margin-top: 45%;
-	text-transform: uppercase;
+	
+	display: block;
+	opacity: 0.8;
+	margin-top: 170px;
 }
 
 
