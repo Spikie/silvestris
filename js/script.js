@@ -12,4 +12,17 @@ $('document').ready(function() {
 		function() { $('#navigation').stop().show() },
 		function() { $('#navigation').stop().hide(); }
 	);
+	
+	$('#box').hide();
+	
+	$('a#hide').click(function(){
+		$('#slideshow').hide();
+		$('#box').show();
+	})
+		
+	$('a#show').click(function(){
+		$('#slideshow').show();
+		$('#box').hide();
+	})
+
 });
