@@ -32,6 +32,7 @@ function load(link)
 		url: link,
 		type: 'GET',
 		dataType: 'html',
+		cache: false,
 		success: function(data)
 		{
 			$('#content').html(data);
@@ -81,5 +82,5 @@ function content()
 
 	// ----- GOLERIO ------
 
-//	$('#galeria')
+	$('#galeria a').fancybox();
 }
