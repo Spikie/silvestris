@@ -12,7 +12,7 @@ body
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
-	font-family: Arial;
+	font-family: Helvetica, Arial, sans-serif;
 	font-size: 13px;
 }
 h1
@@ -162,6 +162,12 @@ h1
 
 #prihlasit{
 	margin: 5px 0 100px 0;
+}
+
+#prihlasit .error
+{
+	color: #f00;
+	margin-bottom: 1em;
 }
 
 
