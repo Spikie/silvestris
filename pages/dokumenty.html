@@ -1,9 +1,28 @@
 <div id="dokumenty"><h1>DOKUMENTY</h1>
+
 	<p>
-	sdfdsfdsfsd s
-		<ul>
-			<li><a href="">Dokument 1</a></li>
-			<li><a href="">Dokument 2</a></li>
-		</ul>
+		Prosím, vyplňte nasledujúci kontaktný formulár, na základe ktorého Vám zašleme prístup k dokumentom.
 	</p>
+
+	<div class="error" style="display: none;">Nesprávny login alebo heslo.</div>
+	<div class="success" style="display: none;">Ďakujeme za Váš záujem, budeme Vás kontaktovať.</div>
+
+	<form method="POST" action="/form.php">
+		<input type="hidden" name="action" value="send" />
+		<p>
+			Meno:<br />
+			<input type="text" name="name" value="" />
+		</p>
+		<p>
+			Spoločnosť:<br />
+			<input type="text" name="firma" value="" />
+		</p>
+		<p>
+			E-mail:<br />
+			<input type="text" name="email" value="" />
+		</p>
+		<p>
+			<input type="submit" value="Odoslať" />
+		</p>
+	</form>
 </div>

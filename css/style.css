@@ -23,6 +23,15 @@ h1
 	border-bottom: 3px solid #f2b103;
 }
 
+a,
+a:link,
+a:visited,
+a:active { color: #f2b103; }
+a:hover { color: #ffffff; }
+
+.right { float: right; }
+small { display: none; }
+
 #wrapper
 {
 	position: relative;
@@ -90,7 +99,7 @@ h1
 	width: 500px;
 	height: 300px;
 	background-color: rgba(0, 0, 0, 0.6);
-	margin: -175px 11px 0 50px;
+	margin: -175px 11px 0 0;
 	position: relative;
 	padding: 5px;
 }
@@ -152,16 +161,25 @@ h1
 #content{
 	margin: 5px 20px 10px 20px;
 	color: #ffffff;
-	line-height: 1.4em;
+	line-height: 1.3em;
 }
 
 #lokalita{
 }
+#lokalita p {
+	font-size: 12px;
+	margin: 0.75em 0;
+}
+#lokalita p.alt {
+	font-size: 14px;
+	color: #F2B103;
+}
+
 
 #prihlasit{
 }
 
-#prihlasit .error
+.error
 {
 	color: #f00;
 	margin-bottom: 1em;
@@ -175,8 +193,9 @@ h1
 
 #galeria ul li {
 	float: left;
-	width: 20%;
-	height: 73px;
+	width: 19%;
+	height: 70px;
+	margin: 0.5%;
 }
 #galeria ul li img {
 	border: 0;
@@ -185,10 +204,23 @@ h1
 }
 
 
+#kontakt p{
+	font-size: 14px;
+	line-height: 1.6em;
+}
 
-
-
-
-
-
+#dokumenty form p {
+	float: left; width: 50%;
+}
+#dokumenty form p input[type=text] {
+	width: 90%;
+}
+#dokumenty form p input[type=submit] {
+	margin-top: 18px;
+}
+#dokumenty .success {
+	font-size: 16px;
+	text-align: center;
+	margin: 4em 0;
+}
 

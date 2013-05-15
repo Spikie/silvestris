@@ -80,7 +80,40 @@ function content()
 		return false;
 	});
 
-	// ----- GOLERIO ------
+	// ----- GALERIA ------
 
 	$('#galeria a').fancybox();
+
+
+	// ----- FORMULAR ------
+	$('#dokumenty form').submit(function(e)
+	{
+		e.preventDefault();
+
+		$.ajax({
+			url: $(this).attr('action'),
+			type: $(this).attr('method'),
+			dataType: 'json',
+			data: $(this).serialize(),
+			success: function(data)
+			{
+				if(data.error != '')
+					$('#dokumenty .error').html(data.error).show();
+				else if(data.success == true)
+				{
+					$('#dokumenty form').hide();
+					$('#dokumenty .success').show();
+				}
+				else
+					alert('Unknown error occured #2');
+			},
+			error: function()
+			{
+				alert('Unknown error occured #1');
+			}
+		});
+
+		return false;
+	});
+
 }
