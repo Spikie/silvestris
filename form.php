@@ -5,8 +5,8 @@ $smtp_host = 'smtp.nexus.sk';
 $smtp_port = '25';
 $smtp_helo = 'EHLO';
 $smtp_auth = true;
-$smtp_login = 'info@woowco.com';
-$smtp_pass = 'mickiewiczova2';
+$smtp_login = 'z.web.stranky@silvestris.sk';
+$smtp_pass = 'tfe5xdivi8eonau7';
 $smtp_security = 'tls';
 
 $return = array
