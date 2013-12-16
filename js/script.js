@@ -89,6 +89,9 @@ function content()
 	$('#dokumenty form').submit(function(e)
 	{
 		e.preventDefault();
+		
+		$(this).find('.submit').hide();
+		$(this).find('.wait').show();
 
 		$.ajax({
 			url: $(this).attr('action'),
@@ -103,9 +106,13 @@ function content()
 				{
 					$('#dokumenty form').hide();
 					$('#dokumenty .success').show();
+					return;
 				}
 				else
 					alert('Unknown error occured #2');
+					
+				$('#dokumenty form .submit').show();
+				$('#dokumenty form .wait').hide();
 			},
 			error: function()
 			{
